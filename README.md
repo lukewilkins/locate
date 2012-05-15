@@ -3,7 +3,7 @@ Locate
 
 Locate is a Laravel bundle for easily accessing visitor geolocation data.
 
-Installation via Artisan
+Install via Artisan
 -------
     php artisan bundle:install locate
 
@@ -15,6 +15,7 @@ Configuration
 Usage
 -------
 Simply call Locate::get() with one of the available values and the data will be returned. Locate stores the geolocation data within your session and only updates if you manually call **Locate::refresh()** or the **refresh_rate** in config/options.php is met.
+
     echo 'Service Used: ' . Locate::get('service') . '<br/>';
     echo 'Timestamp: ' . Locate::get('timestamp') . '<br/>';
     echo 'IP: ' . Locate::get('ip') . '<br/>';
@@ -28,6 +29,7 @@ Simply call Locate::get() with one of the available values and the data will be 
     echo 'Longitude: ' . Locate::get('lng') . '<br/>';
 
 Manually update location data:
+
     Locate::refresh();
 
 Services Currently Supported
