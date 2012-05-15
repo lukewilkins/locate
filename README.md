@@ -6,6 +6,10 @@ Locate is a Laravel bundle for easily accessing visitor geolocation data.
 Install via Artisan
 -------
     php artisan bundle:install locate
+Add the following to your application/bundles.php array:
+
+    'locate' => array('auto' => true),
+
 
 Configuration
 -------
