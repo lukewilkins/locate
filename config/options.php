@@ -7,7 +7,7 @@ return array(
 	'refresh_rate' => 0,
 
 	// IPInfoDB API Key (http://ipinfodb.com/register.php)
-	'ipinfodb_key' => 'dfed82baa036daea52ee8ce49ac60923416bd0a267a3a2ac0a88b471c96c1c76',
+	'ipinfodb_key' => '',
 
 	// Service priority
 	// Options: 'IPInfoDB', 'FreeGeoIP'
