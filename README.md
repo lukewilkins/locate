@@ -20,17 +20,17 @@ Usage
 -------
 Simply call Locate::get() with one of the available values and the data will be returned. Locate stores the geolocation data within your session and only updates if you manually call **Locate::refresh()** or the **refresh_rate** in config/options.php is met.
 
-    echo 'Service Used: ' . Locate::get('service') . '<br/>';
-    echo 'Timestamp: ' . Locate::get('timestamp') . '<br/>';
-    echo 'IP: ' . Locate::get('ip') . '<br/>';
-    echo 'City: ' . Locate::get('city') . '<br/>';
-    echo 'State: ' . Locate::get('state') . '<br/>';
-    echo 'State Acronym: ' . Locate::get('state_code') . '<br/>';
-    echo 'Country: ' . Locate::get('country') . '<br/>';
-    echo 'Country Acronym: ' . Locate::get('country_code') . '<br/>';
-    echo 'Zipcode: ' . Locate::get('zipcode') . '<br/>';
-    echo 'Latitude: ' . Locate::get('lat') . '<br/>';
-    echo 'Longitude: ' . Locate::get('lng') . '<br/>';
+    echo 'Service Used: ' . Locate::get('service') . "\n";
+    echo 'Timestamp: ' . Locate::get('timestamp') . "\n";
+    echo 'IP: ' . Locate::get('ip') . "\n";
+    echo 'City: ' . Locate::get('city') . "\n";
+    echo 'State: ' . Locate::get('state') . "\n";
+    echo 'State Acronym: ' . Locate::get('state_code') . "\n";
+    echo 'Country: ' . Locate::get('country') . "\n";
+    echo 'Country Acronym: ' . Locate::get('country_code') . "\n";
+    echo 'Zipcode: ' . Locate::get('zipcode') . "\n";
+    echo 'Latitude: ' . Locate::get('lat') . "\n";
+    echo 'Longitude: ' . Locate::get('lng') . "\n";
 
 Manually update location data:
 
