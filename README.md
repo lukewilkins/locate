@@ -10,10 +10,11 @@ Installation via Artisan
 Configuration
 -------
 *   Open /bundles/locate/config/options.php
-*   From here you can manage the **refresh rate**, **service priority**, **service API information**, and **fallback details**
+*   You can manage the **refresh rate**, **service priority**, **service API information**, and **fallback details**
 
 Usage
 -------
+Simply call Locate::get() with one of the available values and the data will be returned. Locate stores the geolocation data within your session and only updates if you manually call **Locate::refresh()** or the **refresh_rate** in config/options.php is met.
     echo 'Service Used: ' . Locate::get('service') . '<br/>';
     echo 'Timestamp: ' . Locate::get('timestamp') . '<br/>';
     echo 'IP: ' . Locate::get('ip') . '<br/>';
@@ -25,6 +26,9 @@ Usage
     echo 'Zipcode: ' . Locate::get('zipcode') . '<br/>';
     echo 'Latitude: ' . Locate::get('lat') . '<br/>';
     echo 'Longitude: ' . Locate::get('lng') . '<br/>';
+
+Manually update location data:
+    Locate::refresh();
 
 Services Currently Supported
 -------
