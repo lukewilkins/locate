@@ -17,7 +17,9 @@ class Locate
 		if ( ! Session::has('locate') || self::check_expired()) self::refresh();
 		
 		$locate = Session::get('locate');
-		if (isset($locate[$key])) return $locate[$key];
+		
+		if (is_null($key)) return $locate;
+		elseif (isset($locate[$key])) return $locate[$key];
 
 		return null;
 	}

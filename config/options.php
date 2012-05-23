@@ -6,14 +6,17 @@ return array(
 	// Set to "0" to not automatically refresh
 	'refresh_rate' => 0,
 
-	// IPInfoDB API Key (get one at: http://ipinfodb.com/register.php)
+	// MaxMind API Key (http://www.maxmind.com/app/web_services#city)
+	'maxmind_key' => '',
+
+	// IPInfoDB API Key (http://ipinfodb.com/register.php)
 	'ipinfodb_key' => '',
 
 	// Service priority
-	// Order in array will determine priority
-	// Options: 'IPInfoDB', 'FreeGeoIP'
+	// Options: 'MaxMind', 'IPInfoDB', 'FreeGeoIP'
 	'service_priority' => array(
 		'IPInfoDB',
+		'MaxMind',
 		'FreeGeoIP',
 	),
 
