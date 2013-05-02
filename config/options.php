@@ -4,7 +4,7 @@ return array(
 
 	// Number of minutes before location data should be refreshed
 	// Set to "0" to not automatically refresh
-	'refresh_rate' => 1,
+	'refresh_rate' => 0,
 
 	// MaxMind API Key (http://www.maxmind.com/app/web_services#city)
 	'maxmind_key' => '',
