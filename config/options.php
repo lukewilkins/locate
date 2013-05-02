@@ -15,9 +15,9 @@ return array(
 	// Service priority
 	// Options: 'MaxMind', 'IPInfoDB', 'FreeGeoIP'
 	'service_priority' => array(
+        'IPInfoDB',
         'FreeGeoIP',
-		'IPInfoDB',
-		//'MaxMind',
+        'MaxMind',
 	),
 
 	// Fallback IP Address
