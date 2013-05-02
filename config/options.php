@@ -15,14 +15,20 @@ return array(
 	// Service priority
 	// Options: 'MaxMind', 'IPInfoDB', 'FreeGeoIP'
 	'service_priority' => array(
-		'IPInfoDB',
-		'MaxMind',
-		'FreeGeoIP',
+        'IPInfoDB',
+        'FreeGeoIP',
+        'MaxMind',
 	),
 
 	// Fallback IP Address
 	// Allows you to use a fallback IP address when the user's IP
 	// is 127.0.0.1 or cannot be determined
-	'fallback_ip' => '64.90.182.55',
+	'fallback_ip' => '108.168.252.214',
+	
+    // Trust Proxy Data
+    // When running in the cloud behind a load balancer, enable this
+    // option to get the proper end user IP via the "HTTP_X_FORWARDED_FOR"
+    // header rather than the "REMOTE_ADDR" server var
+    'trustproxydata'    => true,
 
 );

@@ -15,6 +15,7 @@ Configuration
 -------
 *   Open /bundles/locate/config/options.php
 *   You can manage the **refresh rate**, **service priority**, **service API information**, and **fallback details**
+*	When operating in the cloud you can enable "trustproxydata" to tell the request to look for the IP from the X-FORWARDED-FOR header
 
 Usage
 -------
