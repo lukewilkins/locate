@@ -15,7 +15,7 @@ class MaxMind
 			'i' => Locate::ip(),
 		);
 
-		$response = @file_get_contents('http://geoip.maxmind.com/b?' . http_build_query($options));
+		$response = @file_get_contents('https://geoip.maxmind.com/b?' . http_build_query($options));
 
 		if ($response !== false)
 		{
